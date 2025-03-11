@@ -1,1 +1,154 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- metadata goes here -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Yolia, Simon, Portfolio, GitHub, github, software, developer">
+  <meta name="description" content="Personal Website Portfolio for Yolia Simon">
+  <meta name="author" content="Yolia Simon">
+  <title>Yolia Simon Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+
+  <body>
+
+
+    <header>
+      <nav>
+        <div class="left">
+          <a href="#about">Yolia Simon</a>
+        </div>
+        <div class="right">
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#message">Leave a Message!</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about">
+        <h1 id="heading">print("Hello World!")</h1>
+
+        <div class="picture">
+           <div class="profile"><img src="images/profile.png" alt="image_not_displayed" height="280px" width="280px"></div>
+        </div>
+
+      <div class="bio">
+        <p>
+        Hi, I'm Yolia! I'm a final-year Physics student with a passion for solving complex problems and a growing interest in programming. I also enjoy being creative and making things which has led me to pursue a career in software engineering. My journey blends a strong foundation in analytical thinking with a drive to create innovative software solutions.
+        <br><br>
+        Outside of career and academics, I enjoy music, gaming and creating art!
+        </p>
+
+      </div>
+      <div class="social-links">
+        <a href="www.linkedin.com/in/yolia-simon-244200355" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ZXLTRVN" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="yolias628@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="education">
+      <h1>Education</h1>
+      <br>
+      <div class="flexbox-container">
+        <div class="flex1 bounce">
+          <img src="images/exeter.png" alt="image_not_displayed" height="280px" width="280px">
+        </div>
+        <div class="flex2">
+          <p>
+            I studied <b>BSc Physics at the University of Exeter</b>, where I developed strong problem-solving and analytical skills. Through modules such as <em>'Scientific Programming in C'</em> and <em>'IT and Electronics Skills'</em>, I gained hands-on programming experience, learning to write efficient code, solve complex problems, and build a solid foundation in Python and software development. These courses, combined with my physics background, made me comfortable working with data, debugging code, and applying logical thinking to technical challenges, sparking my interest in software engineering.
+          </p>
+          <br>
+          <p>
+            My studies involved applying computational techniques to real-world problems, which deepened my passion for programming. I explored key topics in computational physics, mathematical methods, and data analysis, developing a structured approach to problem-solving. I gained practical experience working with <b>Python</b> and <b>C</b> on various projects. For example, I used <b>Python</b>, <b>MAtplotlib</b>, and the <b>py-pol</b> package to simulate an optical experimental setup, enhancing my skills in data visualization and modeling. Additionally, I implemented a random walk simulation in <b>C</b> to model particle motion, and developed a program to calculate the Taylor series approximation of sin(x), strengthening my understanding of numerical methods and algorithm design.
+          </p>
+          <br>
+          <p>
+            Beyond technical skills, my degree helped me grow in teamwork and communication. I collaborated on group projects and lab work, gaining experience in problem-solving as part of a team. My presentation skills were further honed through the <em>'Nanostructures and Graphene Science'</em> module, where I communicated complex technical topics clearly. Additionally, for my <em>'Energy, Materials, and Sustainability'</em> module, I edited a video discussing the 'Untold costs of AI Energy Use', further improving my ability to present scientific ideas in an engaging and accessible way.
+          </p>
+          <br>
+          <p>
+            This blend of <b>computational skills, problem-solving abilities and teamwork experience</b> has prepared me to transition into software engineering. I am excited to apply my technical background to real-world challenges and continue developing my skills in programming and software development.
+          </p>
+        </div>
+    </div>
+    </section>
+
+    <section id="projects">
+      <h1>Projects and Certificates</h1>
+      <div class="horizontal-scrollbox">
+        <div>
+          Dice App
+        </div>
+        <div>
+          ExCode
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h1>Skills</h1>
+          <ul>
+            <li>
+              <i>Analytical Mindset:</i> My physics background equips me with problem-solving skills and the ability to tackle challenges with a methodical approach.
+            </li>
+            <li>
+              <i>Technical Skills:</i> I am proficient in Python with  experience in C, HTML/CSS, Git Repositories and developing my own mini projects on GitHub.
+            </li>
+            <li>
+              <i>Eager to Learn:</i> I briefly learnt Python in my university course and expanded upon my knowledge in my own time. I am self taught in HTML/CSS/JavaScript and I continue to expand upon my knowledge.
+            </li>
+          </ul>
+    </section>
+
+    <section id="message">
+      <h2>Leave me a message!</h2>
+      <p>
+        I'm always open to exciting opportunities and collaborations. Feel free to reach out if you'd like to collaborate or to just chat!
+        Feel free to contact me via email/LinkedIn/GitHub.
+      </p>
+      <p>in progress</p>
+    </section>
+
+  </body>
+  <br>
+  <footer id="footer">
+    <p>
+      ©
+      <span id="year">2025</span>
+      Yolia Simon ☆ All Rights Reserved.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Automatically update the copyright year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Initialize Swiper
+      const swiper = new Swiper(".card-swiper", {
+          centeredSlides: false,
+          spaceBetween: 0,
+          slidesPerView: 'auto'
+      });
+  });
+
+  </script>
+
+</html>
