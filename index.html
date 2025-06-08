@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head> <!-- metadata goes here -->
 
@@ -13,17 +12,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+  <script src="/ZXLTRVN.github.io/jquery.js"></script>
+  <script src="/ZXLTRVN.github.io/turn.js"></script>
+
   </head>
 
   <body>
 
-
     <header>
       <nav>
         <div class="left">
-          <a href="#about">Yolia Simon</a>
+          <h1 class="nametag">Yolia Simon</h1>
         </div>
         <div class="right">
+          <a href="#about">About</a>
           <a href="#education">Education</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -33,39 +39,57 @@
     </header>
 
     <section id="about">
-        <h1 id="heading">print("Hello World!")</h1>
+        <div id="about">
+          <div>
+            <h1 id="heading1">
+              <span class="text-wrapper">
+                <span class="letters">print("Software Engineering")</span>
+                <span class="line"></span>
+              </span>
+            </h1>
+          </div>
 
-        <div class="picture">
+          <div class="picture">
            <div class="profile"><img src="images/profile.png" alt="image_not_displayed" height="280px" width="280px"></div>
+          </div>
+          </div>
+
         </div>
 
       <div class="bio">
-        <p>
-        Hi, I'm Yolia! I'm a final-year Physics student with a passion for solving complex problems and a growing interest in programming. I also enjoy being creative and making things which has led me to pursue a career in software engineering. My journey blends a strong foundation in analytical thinking with a drive to create innovative software solutions.
-        <br><br>
-        Outside of career and academics, I enjoy music, gaming and creating art!
-        </p>
-
+          <p>
+          Hi, I'm Yolia! I'm a Physics graduate based in London with a passion for solving complex problems and a growing interest in programming. I also enjoy being creative and building things which has led me to pursue a career in software engineering. My journey blends a strong foundation in analytical thinking with a drive to create innovative software solutions.
+          <br><br>
+          Outside of career prospects and academia, I enjoy music, gaming and creating traditional/digital art!
+          </p>
       </div>
+
       <div class="social-links">
-        <a href="www.linkedin.com/in/yolia-simon-244200355" target="_blank">
+        <a href="https://www.linkedin.com/in/yolia-simon-244200355" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://github.com/ZXLTRVN" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-        <a href="yolias628@gmail.com" target="_blank">
+        <a href="mailto:yolias628@gmail.com" target="_blank">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
     </section>
 
     <section id="education">
-      <h1>Education</h1>
+      <h1 class="title">
+        <span class="text-wrapper1">
+          <span class="line line1"></span>
+          <span class="letters">Education</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
       <br>
       <div class="flexbox-container">
         <div class="flex1 bounce">
           <img src="images/exeter.png" alt="image_not_displayed" height="280px" width="280px">
+          <p>Hover above here!</p>
         </div>
         <div class="flex2">
           <p>
@@ -73,7 +97,7 @@
           </p>
           <br>
           <p>
-            My studies involved applying computational techniques to real-world problems, which deepened my passion for programming. I explored key topics in computational physics, mathematical methods, and data analysis, developing a structured approach to problem-solving. I gained practical experience working with <b>Python</b> and <b>C</b> on various projects. For example, I used <b>Python</b>, <b>MAtplotlib</b>, and the <b>py-pol</b> package to simulate an optical experimental setup, enhancing my skills in data visualization and modeling. Additionally, I implemented a random walk simulation in <b>C</b> to model particle motion, and developed a program to calculate the Taylor series approximation of sin(x), strengthening my understanding of numerical methods and algorithm design.
+            My studies involved applying computational techniques to real-world problems, which deepened my passion for programming. I explored key topics in computational physics, mathematical methods, and data analysis, developing a structured approach to problem-solving. I gained practical experience working with <b>Python</b> and <b>C</b> on various projects. For example, I used <b>Python</b>, <b>Matplotlib</b>, and the <b>py-pol</b> package to simulate an optical experimental setup, enhancing my skills in data visualization and modeling. Additionally, I implemented a random walk simulation in <b>C</b> to model particle motion, and developed a program to calculate the Taylor series approximation of sin(x), strengthening my understanding of numerical methods and algorithm design.
           </p>
           <br>
           <p>
@@ -87,20 +111,110 @@
     </div>
     </section>
 
-    <section id="projects">
-      <h1>Projects and Certificates</h1>
-      <div class="horizontal-scrollbox">
-        <div>
-          Dice App
-        </div>
-        <div>
-          ExCode
-        </div>
+   <section id="projects">
+      <h1 class="title">
+        <span class="text-wrapper1">
+          <span class="line line1"></span>
+          <span class="letters">Projects and Achievements</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+
+      <div id="projects">
+        I have built a stylised desktop application for rolling TTRPG (tabletop role-playing game) dice using JavaScript, Node.js, Electron, HTML, and CSS. The idea was to create something fun and functional, with a clean interface and a bit of personality. However, as of now, I’m spending a lot of time improving my technical skills in JavaScript and Python. I’ve been working on a few web applications to get more hands-on experience with front-end development and building cross-platform desktop apps. It’s been a great way to learn how everything fits together—from layout and styling to interactivity and app structure. I’m also starting to explore some new frameworks such as Flask for Python and React Native for mobile applications.
       </div>
+
+
+      <div class="flipbook">
+          <div class="hard">
+            <img src="/ZXLTRVN.github.io/images/coverimg.jpg">
+          </div>
+          <div class="hard"> <small>This is a booklet that showcases all of the techincal and soft skills I've developed over the years. displays my initiative t get experience when i was not able to obtain summer work placements/internships due to unfortuate circumstances [EDIT THIS]</small></div>
+          <div>
+            <img src="images/certificates/ExeWebDev_Certificate_Yolia Simon.png" alt="exWebDev_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/ExeAI_Certificate_Yolia Simon.png" alt="exAI_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/Excode_Certificate_Yolia Simon.png" alt="excode_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/ProfessionalDiplomainBusinessProjectManagement.png">
+          </div>
+          <div>
+            <img src="images/certificates/JavaScript_for_beginners_simplilearn.png" >
+          </div>
+          <div>
+            <img src="images/certificates/LearnJavaScriptbybuildingTetris-1.png" alt="JSTetris_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/JPmorgan.jpg" alt="JPmorgan_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/Headstart EDT Certificate_page-0001.png" alt="HeadstartEDT_certificate">
+          </div>
+          <div>
+            <img src="images/certificates/Headstart EDT Certificate_page-0002.jpg" height="300px" width="300px">
+          </div>
+          <div class="hard"></div>
+        </div>
+
+      <div id="nav-buttons">
+        <button id="back">Back</button>
+        <button id="next">Next</button>
+      </div>
+
+      <script>
+        $('.flipbook').turn();
+
+        jQuery(document).ready(function(){
+          $('#back').click(function(){
+            $('.flipbook').turn('previous');
+          });
+          $('#next').click(function(){
+            $('.flipbook').turn('next');
+          });
+        });
+      </script>
+
     </section>
 
     <section id="skills">
-      <h1>Skills</h1>
+      <h1 class="title">
+        <span class="text-wrapper1">
+          <span class="line line1"></span>
+          <span class="letters">Techincal and Soft Skills</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+
+      <br>
+
+      <div id="skills-section">
+
+        <div class="icon1">
+          <img src="/ZXLTRVN.github.io/images/skills/python.png" alt="python" height="100px">
+        </div>
+        <div class="icon2">
+          <img src="/ZXLTRVN.github.io/images/skills/javascript.png" alt="javascript" height="100px">
+        </div>
+        <div class="icon3">
+          <img src="/ZXLTRVN.github.io/images/skills/github.jpg" alt="github" height="100px">
+        </div>
+        <div class="icon4">
+          <img src="/ZXLTRVN.github.io/images/skills/git.png" alt="git" height="100px">
+        </div>
+        <div class="icon5">
+          <img src="/ZXLTRVN.github.io/images/skills/vscode.png" alt="vscode" height="100px">
+        </div>
+        <div class="icon6">
+          <img src="/ZXLTRVN.github.io/images/skills/css.png" alt="css" height="100px">
+        </div>
+
+      </div>
+
+
           <ul>
             <li>
               <i>Analytical Mindset:</i> My physics background equips me with problem-solving skills and the ability to tackle challenges with a methodical approach.
@@ -111,20 +225,33 @@
             <li>
               <i>Eager to Learn:</i> I briefly learnt Python in my university course and expanded upon my knowledge in my own time. I am self taught in HTML/CSS/JavaScript and I continue to expand upon my knowledge.
             </li>
+
+            creativity, teamwork, IT skills, adaptability, problem-solving, analytical skills, critical thinking, numeracy skills, research, resilience, time management, initiative, communication skills, essay and report writing, decision making
           </ul>
+
+
     </section>
 
     <section id="message">
       <h2>Leave me a message!</h2>
+      <br>
       <p>
         I'm always open to exciting opportunities and collaborations. Feel free to reach out if you'd like to collaborate or to just chat!
-        Feel free to contact me via email/LinkedIn/GitHub.
+        I am also available to contact via email/LinkedIn.
       </p>
-      <p>in progress</p>
+      <br>
+
+      <p>Write a message here:
+        <input id="textbox" type="text">
+        <button id="send-button">Send</button>
+      </p>
+
+      <ul id="messages"></ul>
+
+      <script src="script.js"></script>
+
     </section>
 
-  </body>
-  <br>
   <footer id="footer">
     <p>
       ©
@@ -133,22 +260,191 @@
     </p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+
+
 
   <script>
 
     document.addEventListener("DOMContentLoaded", function () {
       // Automatically update the copyright year
       document.getElementById('year').textContent = new Date().getFullYear();
+    });
 
-      // Initialize Swiper
-      const swiper = new Swiper(".card-swiper", {
-          centeredSlides: false,
-          spaceBetween: 0,
-          slidesPerView: 'auto'
+  </script>
+
+
+  <!-- animations here -->
+  <script>
+    //skills animation
+
+    const icons = document.querySelectorAll('.icon');
+    //console.log(icons)
+
+    let skills_animation = anime.timeline({
+      //property parameters
+      duration: 500,
+      easing: 'easeInOutSine',
+      //animation parameters
+      direction: 'alternate',
+      loop: true
+      });
+
+    //creates a staggered effect by adding
+    skills_animation.add({
+      targets: '.icon1',
+      //properties
+      translateX: -50,
+    }).add({
+      targets: '.icon2',
+      translateX: -50,
+    }).add({
+      targets: '.icon3',
+      translateX: -50,
+    }).add({
+      targets: '.icon4',
+      translateX: -50,
+    }).add({
+      targets: '.icon5',
+      translateX: -50,
+    }).add({
+      targets: '.icon6',
+      translateX: -50,
+    })
+
+
+    //main title animation
+
+    var textWrapper = document.querySelector('#heading1 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+      .add({
+        targets: '#heading1 .line',
+        scaleX: [0,1],
+        opacity: [0.5,1],
+        easing: "easeInOutExpo",
+        duration: 900
+      }).add({
+        targets: '#heading1 .letter',
+        opacity: [0,1],
+        translateX: [40,0],
+        translateZ: 0,
+        scaleX: [0.3, 1],
+        easing: "easeOutExpo",
+        duration: 800,
+        offset: '-=600',
+        delay: (el, i) => 150 + 25 * i
+      }).add({
+        targets: '#heading1',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+
+  </script>
+
+  <script>
+
+    //subheading animation
+
+    //selects all elements named .title, loops over each one found
+    //title is current element, index is position
+    document.querySelectorAll('.title').forEach((title, index) => {
+    const letters = title.querySelector('.letters');
+
+    // Split the letters into spans
+    letters.innerHTML = letters.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    // Unique selector for each instance to prevent overlap
+    const uniqueClass = `title-${index}`;
+    title.classList.add(uniqueClass);
+
+    anime.timeline({ loop: true })
+      .add({
+        targets: `.${uniqueClass} .line`,
+        opacity: [0.5, 1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+        duration: 700
+      }).add({
+        targets: `.${uniqueClass} .line`,
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+      }).add({
+        targets: `.${uniqueClass} .letter`,
+        opacity: [0, 1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        delay: (el, i) => 50 * i,
+        offset: '-=300'
+      }).add({
+        targets: `.${uniqueClass}`,
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
       });
   });
+    //var textWrapper = document.querySelector('.title .letters');
+    //textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+    //anime.timeline({loop: true})
+      //.add({
+        //targets: '.title .line',
+        //opacity: [0.5,1],
+        //scaleX: [0, 1],
+        //easing: "easeInOutExpo",
+        //duration: 700
+      //}).add({
+        //targets: '.title .line',
+        //duration: 600,
+        //easing: "easeOutExpo",
+        //translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+      //}).add({
+        //targets: '.title .letter',
+        //opacity: [0,1],
+        //translateX: ["0.5em", 0],
+        //easing: "easeOutExpo",
+        //duration: 600,
+        //offset: '-=300'
+      //}).add({
+        //targets: '.title',
+        //opacity: 0,
+        //duration: 1000,
+        //easing: "easeOutExpo",
+        //delay: 1000
+      //});
+
+  </script>
+
+  <script>
+    //nametag animation
+
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.nametag');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+      .add({
+        targets: '.nametag .letter',
+        translateX: [40,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: (el, i) => 500 + 30 * i
+      }).add({
+        targets: '.nametag .letter',
+        translateX: [0,-30],
+        opacity: [1,0],
+        easing: "easeInExpo",
+        duration: 1100,
+        delay: (el, i) => 100 + 30 * i
+      });
   </script>
 
 </html>
