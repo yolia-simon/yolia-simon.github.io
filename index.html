@@ -16,12 +16,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 
-  <script src="/ZXLTRVN.github.io/jquery.js"></script>
-  <script src="/ZXLTRVN.github.io/turn.js"></script>
+  <script src="jquery.js"></script>
+  <script src="turn.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   </head>
 
-  <body>
+  <body oncontextmenu="return false;">
 
     <header>
       <nav>
@@ -88,7 +90,7 @@
       <br>
       <div class="flexbox-container">
         <div class="flex1 bounce">
-          <img src="images/exeter.png" alt="image_not_displayed" height="280px" width="280px">
+          <img src="images/exeter.png" alt="exeter_unilogo" height="280px" width="280px">
           <p>Hover above here!</p>
         </div>
         <div class="flex2">
@@ -97,11 +99,11 @@
           </p>
           <br>
           <p>
-            My studies involved applying computational techniques to real-world problems, which deepened my passion for programming. I explored key topics in computational physics, mathematical methods, and data analysis, developing a structured approach to problem-solving. I gained practical experience working with <b>Python</b> and <b>C</b> on various projects. For example, I used <b>Python</b>, <b>Matplotlib</b>, and the <b>py-pol</b> package to simulate an optical experimental setup, enhancing my skills in data visualization and modeling. Additionally, I implemented a random walk simulation in <b>C</b> to model particle motion, and developed a program to calculate the Taylor series approximation of sin(x), strengthening my understanding of numerical methods and algorithm design.
+            My studies involved applying computational techniques to real-world problems, which deepened my passion for programming. I explored key topics in computational physics, mathematical methods, and data analysis, developing a structured approach to problem-solving. I gained practical experience working with <b>Python</b> and <b>C</b> on various projects. For example, I used <b>Python</b>, <b>Matplotlib</b>, and the <b>py-pol</b> package to simulate an optical experimental setup, enhancing my skills in data visualisation and modelling. Additionally, I implemented a random walk simulation in <b>C</b> to model particle motion, and developed a program to calculate the Taylor series approximation of sin(x), strengthening my understanding of numerical methods and algorithm design.
           </p>
           <br>
           <p>
-            Beyond technical skills, my degree helped me grow in teamwork and communication. I collaborated on group projects and lab work, gaining experience in problem-solving as part of a team. My presentation skills were further honed through the <em>'Nanostructures and Graphene Science'</em> module, where I communicated complex technical topics clearly. Additionally, for my <em>'Energy, Materials, and Sustainability'</em> module, I edited a video discussing the 'Untold costs of AI Energy Use', further improving my ability to present scientific ideas in an engaging and accessible way.
+            Beyond technical skills, my degree helped me grow in teamwork and communication. I collaborated on group projects and lab work, gaining experience in problem-solving as part of a team. My presentation skills were further honed through the <em>'Nanostructures and Graphene Science'</em> module, where I communicated complex technical topics clearly. Additionally, for my <em>'Energy, Materials, and Sustainability'</em> module, I edited a video discussing the 'Untold Costs of AI Energy Use', further improving my ability to present scientific ideas in an engaging and accessible way.
           </p>
           <br>
           <p>
@@ -127,9 +129,9 @@
 
       <div class="flipbook">
           <div class="hard">
-            <img src="/ZXLTRVN.github.io/images/coverimg.jpg">
+            <img src="images/coverimg.jpg">
           </div>
-          <div class="hard"> <small>This is a booklet that showcases all of the techincal and soft skills I've developed over the years. displays my initiative t get experience when i was not able to obtain summer work placements/internships due to unfortuate circumstances [EDIT THIS]</small></div>
+          <div class="hard"> <small>This is a booklet that showcases all of the techincal and soft skills I've developed. displays my initiative to get experience when i was not able to obtain summer work placements/internships due to unfortuate circumstances [EDIT THIS]</small></div>
           <div>
             <img src="images/certificates/ExeWebDev_Certificate_Yolia Simon.png" alt="exWebDev_certificate">
           </div>
@@ -151,18 +153,18 @@
           <div>
             <img src="images/certificates/JPmorgan.jpg" alt="JPmorgan_certificate">
           </div>
-          <div>
-            <img src="images/certificates/Headstart EDT Certificate_page-0001.png" alt="HeadstartEDT_certificate">
-          </div>
-          <div>
-            <img src="images/certificates/Headstart EDT Certificate_page-0002.jpg" height="300px" width="300px">
-          </div>
           <div class="hard"></div>
         </div>
 
+        <br>
+
       <div id="nav-buttons">
-        <button id="back">Back</button>
-        <button id="next">Next</button>
+        <button id="back" type="button" class="buttons">
+          <span class="button-text">Back</span>
+        </button>
+        <button id="next" type="button" class="buttons">
+          <span class="button-text">Next</span>
+        </button>
       </div>
 
       <script>
@@ -194,40 +196,61 @@
       <div id="skills-section">
 
         <div class="icon1">
-          <img src="/ZXLTRVN.github.io/images/skills/python.png" alt="python" height="100px">
+          <!-- <img src="/images/skills/python.png" alt="python" height="100px"> -->
+          <img src="images/skills/python.png" alt="python" height="100px">
         </div>
         <div class="icon2">
-          <img src="/ZXLTRVN.github.io/images/skills/javascript.png" alt="javascript" height="100px">
+          <img src="images/skills/javascript.png" alt="javascript" height="100px">
         </div>
         <div class="icon3">
-          <img src="/ZXLTRVN.github.io/images/skills/github.jpg" alt="github" height="100px">
+          <img src="images/skills/github.jpg" alt="github" height="100px">
         </div>
         <div class="icon4">
-          <img src="/ZXLTRVN.github.io/images/skills/git.png" alt="git" height="100px">
+          <img src="images/skills/git.png" alt="git" height="100px">
         </div>
         <div class="icon5">
-          <img src="/ZXLTRVN.github.io/images/skills/vscode.png" alt="vscode" height="100px">
+          <img src="images/skills/vscode.png" alt="vscode" height="100px">
         </div>
         <div class="icon6">
-          <img src="/ZXLTRVN.github.io/images/skills/css.png" alt="css" height="100px">
+          <img src="images/skills/css.png" alt="css" height="100px">
         </div>
 
       </div>
 
+      Over the years, I've developed a mix of technical and soft skills that help me solve problems, work well with others and to keep learning.
 
-          <ul>
-            <li>
-              <i>Analytical Mindset:</i> My physics background equips me with problem-solving skills and the ability to tackle challenges with a methodical approach.
-            </li>
-            <li>
-              <i>Technical Skills:</i> I am proficient in Python with  experience in C, HTML/CSS, Git Repositories and developing my own mini projects on GitHub.
-            </li>
-            <li>
-              <i>Eager to Learn:</i> I briefly learnt Python in my university course and expanded upon my knowledge in my own time. I am self taught in HTML/CSS/JavaScript and I continue to expand upon my knowledge.
-            </li>
+      <div id="projects">
 
-            creativity, teamwork, IT skills, adaptability, problem-solving, analytical skills, critical thinking, numeracy skills, research, resilience, time management, initiative, communication skills, essay and report writing, decision making
-          </ul>
+        <div class="row">
+          <div class="column">
+
+            I enjoy digging into problems and figuring out how things work (or why they don't!) Whether it's debugging code or breaking down a tricky brief, I approach things analytically and with curiosity.
+            <br> <br>
+            I'm comfortable working with data, spotting patterns and drawing insights. I've done a lot of research in academic settings and I enjoy turning complex information into something useful and clear to understand.
+            <br> <br>
+            I work well when I'm collaborating. I communicate clearly, ask questions when needed and value a team environment where ideas are shared and built upon. I've contributed to group projects in both academic and personal settings and I know how to balance leading and listening.
+            <br> <br>
+            I like to bring new ideas to the table &mdash; whether that's suggesting a better way to structure something or coming up with a creative solution to a problem. I take initiative and tend to jump in when I see an opportunity to impove a project.
+            <br> <br>
+
+            <img class="images" src="/ZXLTRVN.github.io/images/dice-app-snippet.png" height="400px">
+
+          </div>
+          <div class="column">
+
+            <img class="images" src="/ZXLTRVN.github.io/images/py-pol-snippet.png" height="400px" width="500px">
+
+            <br> <br>
+            Tech is always evolving and I'm happy adapting to new tools, workflows or project goals. I stay calm under pressure, learn from feedback and don't give up easily when things get tough.
+            <br> <br>
+            I'm used to juggling multiple priorities &mdash; deadlines, tasks, projects &mdash; and I try to make decisions with a balance of logic and gut instinct. I like to stay organised without overplanning, especially by using apps such as Notion.
+            <br> <br>
+            I've built a solid foundation in IT by myself &mdash; from general digital literacy to using version control, working with basic code and navigating tools like VS Code, Git and project management platforms.
+
+          </div>
+        </div>
+
+      </div>
 
 
     </section>
@@ -243,7 +266,7 @@
 
       <p>Write a message here:
         <input id="textbox" type="text">
-        <button id="send-button">Send</button>
+        <button id="send-button" class="buttons">Send</button>
       </p>
 
       <ul id="messages"></ul>
@@ -262,6 +285,23 @@
 
   </body>
 
+  <script>
+    //prevent copying text
+
+    document.addEventListener('keydown', function(e) {
+      if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85)) {
+        Swal.fire({
+          icon: "error",
+          title: "Copying is not allowed!",
+          text: "Please do not copy any text from this website",
+          showConfirmButton: false,
+          timer: 2000
+        });
+        e.preventDefault();
+      }
+    })
+
+  </script>
 
 
   <script>
