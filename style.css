@@ -82,6 +82,10 @@ h1 {
   font-size: 30px;
 }
 
+#pixel{
+  text-align: center;
+}
+
 nav {
   background-color: #b34ba088;
   display: flex;
@@ -182,7 +186,7 @@ section {
 }
 
 #about .bio {
-  margin-top: -10rem;
+  margin-top: -15rem;
   margin-bottom: 2rem;
   max-width: 43rem;
 }
@@ -206,8 +210,9 @@ section {
 
 #about .social-links {
   font-size: 50px;
-  margin-top: -2rem;
-  margin-left: 49rem;
+  margin-left: 53rem;
+  margin-top: 3rem;
+  margin-left: 53rem;
 }
 
 #about .social-links a {
@@ -447,6 +452,17 @@ button.buttons:active::before {
   content: "";
   display: table;
   clear: both;
+}
+
+#caption {
+  width: 465px;
+  margin-left: 110px;
+}
+
+#caption_ {
+  width: 465px;
+  margin-left: 80px;
+  text-align: center;
 }
 
 /* dual columns stack on top of each other for small screens */
